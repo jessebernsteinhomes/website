@@ -1,0 +1,12 @@
+# Exclude brief documents and screenshots
+*.docx
+Screenshot*
+
+# Unused images
+il_1588xN*.webp
+original.jpg.avif
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venice Beach Homes for Sale | Jesse Bernstein Homes</title>
+  <meta name="description" content="Browse Venice Beach homes for sale, Marina del Rey properties, and Westside Los Angeles real estate. Architectural homes, coastal luxury, and off-market opportunities." />
+  <meta name="keywords" content="Venice Beach homes for sale, Venice Beach real estate listings, Marina del Rey homes for sale, Westside Los Angeles properties, architectural homes Venice Beach" />
+  <link rel="canonical" href="https://www.jessebernsteinhomes.com/listings.html" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .filter-bar { background: var(--white); border-bottom: 1px solid var(--sand-dark); padding: 20px 0; position: sticky; top: var(--nav-h); z-index: 100; }
+    .filter-bar__inner { max-width: var(--max-w); margin: 0 auto; padding: 0 40px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .filter-btn { padding: 8px 20px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid var(--sand-dark); border-radius: 100px; background: transparent; color: var(--charcoal-mid); cursor: pointer; transition: all 0.3s ease; }
+    .filter-btn:hover, .filter-btn.active { background: var(--charcoal); color: var(--white); border-color: var(--charcoal); }
+    .listing-card--featured { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; }
+    .listing-card--featured .listing-card__media { height: 100%; min-height: 340px; }
+    .listing-card--featured .listing-card__body { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+    .listing-card--featured .listing-card__price { font-size: 38px; }
+    .off-market-strip { background: var(--charcoal); color: var(--white); padding: 64px 0; text-align: center; }
+    @media (max-width: 900px) { .listing-card--featured { grid-column: span 1; display: flex; flex-direction: column; } .listing-card--featured .listing-card__media { height: 260px; } }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Jesse Bernstein</span>
+        <span class="nav__logo-tag">Venice Beach · Westside Los Angeles</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="listings.html" class="nav__link active">Properties</a></li>
+        <li><a href="neighborhoods.html" class="nav__link">Neighborhoods</a></li>
+        <li><a href="sellers.html" class="nav__link">Sellers</a></li>
+        <li><a href="buyers.html" class="nav__link">Buyers</a></li>
+        <li><a href="investments.html" class="nav__link">Investments</a></li>
+        <li><a href="market-insights.html" class="nav__link">Market Insights</a></li>
+        <li><a href="contact.html" class="nav__cta nav__link">Let's Connect</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="about.html" class="nav__mobile-link">About</a>
+    <a href="listings.html" class="nav__mobile-link">Properties</a>
+    <a href="neighborhoods.html" class="nav__mobile-link">Neighborhoods</a>
+    <a href="sellers.html" class="nav__mobile-link">Sellers</a>
+    <a href="buyers.html" class="nav__mobile-link">Buyers</a>
+    <a href="investments.html" class="nav__mobile-link">Investments</a>
+    <a href="market-insights.html" class="nav__mobile-link">Market Insights</a>
+    <a href="contact.html" class="btn btn--primary nav__mobile-cta">Let's Connect</a>
+  </div>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="page-hero__bg" style="background-image: url('dreamstime_xxl_139854607.jpg');"></div>
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content">
+        <p class="t-eyebrow" style="color: var(--gold); margin-bottom: 16px;">Active · Featured · Off-Market</p>
+        <h1 class="t-h1 text-white">Properties</h1>
+      </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <div class="filter-bar__inner">
+        <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--charcoal-soft); margin-right: 8px;">Filter:</span>
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Venice Beach</button>
+        <button class="filter-btn">Marina del Rey</button>
+        <button class="filter-btn">Santa Monica</button>
+        <button class="filter-btn">Off-Market</button>
+        <button class="filter-btn">Under $2M</button>
+        <button class="filter-btn">$2M – $5M</button>
+        <button class="filter-btn">$5M+</button>
+      </div>
+    </div>
+
+    <!-- Active Listings -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="t-eyebrow">Current Listings</p>
+          <div class="divider"></div>
+          <h2 class="t-h2">Active Properties</h2>
+          <p class="t-lead" style="max-width: 520px; margin-top: 12px;">Curated homes across Venice Beach and the Westside — each one selected for its architecture, location, and lifestyle potential.</p>
+        </div>
+        <div class="listings-grid">
+
+          <!-- Featured Card -->
+          <article class="listing-card listing-card--featured reveal">
+            <div class="listing-card__media">
+              <img src="dreamstime_xxl_44191926.jpg" alt="Venice Canal front home" loading="lazy" />
+              <span class="listing-card__badge">Featured · Active</span>
+            </div>
+            <div class="listing-card__body">
+              <div style="font-size: 10px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px;">Venice · Canal Front</div>
+              <div class="listing-card__price">$3,295,000</div>
+              <div class="listing-card__address" style="margin-bottom: 20px;">Carroll Canal, Venice, CA 90291</div>
+              <p style="font-size: 14px; color: var(--charcoal-soft); line-height: 1.7; margin-bottom: 24px;">A rare canal-front gem with a private dock, designer finishes, and sweeping waterway views. Steps from the beach and the heartbeat of Venice. This is the one people wait years for.</p>
+              <div class="listing-card__details">
+                <div class="listing-card__detail">4 <span>Beds</span></div>
+                <div class="listing-card__detail">3.5 <span>Baths</span></div>
+                <div class="listing-card__detail">2,640 <span>Sq Ft</span></div>
+                <div class="listing-card__detail">Canal <span>Front</span></div>
+              </div>
+              <div style="margin-top: 28px;">
+                <a href="contact.html" class="btn btn--primary">Request Showing</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card reveal reveal-delay-1">
+            <div class="listing-card__media">
+              <img src="dreamstime_xxl_127935308.jpg" alt="Venice Beach home" loading="lazy" />
+              <span class="listing-card__badge">Active</span>
+            </div>
+            <div class="listing-card__body">
+              <div class="listing-card__price">$2,750,000</div>
+              <div class="listing-card__address">Breeze Ave, Venice, CA 90291</div>
+              <div class="listing-card__details">
+                <div class="listing-card__detail">3 <span>Beds</span></div>
+                <div class="listing-card__detail">2.5 <span>Baths</span></div>
+                <div class="listing-card__detail">1,980 <span>Sq Ft</span></div>
+                <div class="listing-card__detail">Walk <span>Street</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card reveal reveal-delay-2">
+            <div class="listing-card__media">
+              <img src="dreamstime_xxl_39120579.jpg" alt="Beach-close home Venice" loading="lazy" />
+              <span class="listing-card__badge">Active</span>
+            </div>
+            <div class="listing-card__body">
+              <div class="listing-card__price">$1,895,000</div>
+              <div class="listing-card__address">Andalusia Ave, Venice, CA 90291</div>
+              <div class="listing-card__details">
+                <div class="listing-card__detail">3 <span>Beds</span></div>
+                <div class="listing-card__detail">2 <span>Baths</span></div>
+                <div class="listing-card__detail">1,580 <span>Sq Ft</span></div>
+                <div class="listing-card__detail">2 <span>Blocks to Beach</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card reveal reveal-delay-1">
+            <div class="listing-card__media">
+              <img src="dreamstime_xxl_726616.jpg" alt="Venice Canals home" loading="lazy" />
+              <span class="listing-card__badge">Active</span>
+            </div>
+            <div class="listing-card__body">
+              <div class="listing-card__price">$4,100,000</div>
+              <div class="listing-card__address">Eastern Canal, Venice, CA 90291</div>
+              <div class="listing-card__details">
+                <div class="listing-card__detail">4 <span>Beds</span></div>
+                <div class="listing-card__detail">4 <span>Baths</span></div>
+                <div class="listing-card__detail">3,020 <span>Sq Ft</span></div>
+                <div class="listing-card__detail">Canal <span>Front</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card reveal reveal-delay-2">
+            <div class="listing-card__media">
+              <img src="dreamstime_xxl_89292312.jpg" alt="Marina del Rey penthouse" loading="lazy" />
+              <span class="listing-card__badge">Active</span>
+            </div>
+            <div class="listing-card__body">
+              <div class="listing-card__price">$2,200,000</div>
+              <div class="listing-card__address">Via Marina, Marina del Rey, CA 90292</div>
+              <div class="listing-card__details">
+                <div class="listing-card__detail">3 <span>Beds</span></div>
+                <div class="listing-card__detail">3 <span>Baths</span></div>
+                <div class="listing-card__detail">2,100 <span>Sq Ft</span></div>
+                <div class="listing-card__detail">Marina <span>Views</span></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Off-Market Strip -->
+    <div class="off-market-strip">
+      <div class="container--narrow">
+        <p class="t-eyebrow text-gold" style="margin-bottom: 16px;">Exclusive Access</p>
+        <h2 class="t-h2 text-white" style="margin-bottom: 20px;">Off-Market Opportunities</h2>
+        <p class="t-lead" style="color: rgba(255,255,255,0.65); margin-bottom: 36px; max-width: 560px; margin-left: auto; margin-right: auto;">Some of the best homes never hit the MLS. Jesse's network gives qualified buyers early and private access to off-market properties before they're available to the public.</p>
+        <a href="contact.html" class="btn btn--primary">Request Off-Market Access</a>
+      </div>
+    </div>
+
+    <!-- Recently Sold -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="t-eyebrow">Track Record</p>
+          <div class="divider"></div>
+          <h2 class="t-h2">Recent Sales</h2>
+          <p class="t-lead" style="max-width: 480px; margin-top: 12px;">A selection of recently closed transactions on the Venice Beach Westside.</p>
+        </div>
+        <div class="listings-grid">
+          <article class="listing-card reveal reveal-delay-1">
+            <div class="listing-card__media" style="position: relative;">
+              <img src="dreamstime_xxl_181422810.jpg" alt="Beachfront home sold" loading="lazy" />
+              <span class="listing-card__badge" style="background: var(--charcoal);">Sold</span>
+            </div>
+            <div class="listing-card__body">
+              <div style="font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 0.1em; margin-bottom: 6px;">SOLD OVER ASKING</div>
+              <div class="listing-card__price">$5,900,000</div>
+              <div class="listing-card__address">Ocean Front Walk, Venice, CA</div>
+              <div class="listing-card__details">
+                <div class="listing-card__detail">5 <span>Beds</span></div>
+                <div class="listing-card__detail">4 <span>Baths</span></div>
+                <div class="listing-card__detail">3,400 <span>Sq Ft</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="listing-card reveal reveal-delay-2">
+            <div class="listing-card__media">
+              <img src="dreamstime_xxl_35463659.jpg" alt="Venice Canals sold home" loading="lazy" />
+              <span class="listing-card__badge" style="background: var(--charcoal);">Sold</span>
+            </div>
+            <div class="listing-card__body">
+              <div style="font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 0.1em; margin-bottom: 6px;">SOLD — MULTIPLE OFFERS</div>
+              <div class="listing-card__price">$3,150,000</div>
+              <div class="listing-card__address">Grand Canal, Venice, CA</div>
+              <div class="listing-card__details">
+                <div class="listing-card__detail">4 <span>Beds</span></div>
+                <div class="listing-card__detail">3 <span>Baths</span></div>
+                <div class="listing-card__detail">2,480 <span>Sq Ft</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="listing-card reveal reveal-delay-3">
+            <div class="listing-card__media">
+              <img src="dreamstime_xxl_357933610.jpg" alt="Venice home sold" loading="lazy" />
+              <span class="listing-card__badge" style="background: var(--charcoal);">Sold</span>
+            </div>
+            <div class="listing-card__body">
+              <div style="font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 0.1em; margin-bottom: 6px;">SOLD OVER ASKING</div>
+              <div class="listing-card__price">$1,725,000</div>
+              <div class="listing-card__address">Palms Blvd, Mar Vista, CA</div>
+              <div class="listing-card__details">
+                <div class="listing-card__detail">3 <span>Beds</span></div>
+                <div class="listing-card__detail">2 <span>Baths</span></div>
+                <div class="listing-card__detail">1,620 <span>Sq Ft</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--dark">
+      <div class="container--narrow text-center reveal">
+        <p class="t-eyebrow text-gold">Don't See What You're Looking For?</p>
+        <div class="divider divider--center"></div>
+        <h2 class="t-h2 text-white" style="margin-bottom: 24px;">Tell Jesse What<br>You're Looking For.</h2>
+        <p class="t-lead" style="color: rgba(255,255,255,0.65); margin-bottom: 36px;">The best homes are often found before they're listed. Describe your ideal property and Jesse will search on your behalf — including his off-market network.</p>
+        <a href="contact.html" class="btn btn--primary">Start Your Property Search</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <div class="footer__brand-name">Jesse Bernstein</div>
+        <div class="footer__brand-tag">Venice Beach · Westside Los Angeles</div>
+        <p class="footer__brand-desc">Venice Beach's leading real estate advisor for architectural homes, coastal luxury, and investment properties across the Los Angeles Westside.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="footer__social-link" aria-label="Facebook">fb</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Explore</div>
+        <ul class="footer__links">
+          <li><a href="about.html" class="footer__link">About Jesse</a></li>
+          <li><a href="listings.html" class="footer__link">Properties</a></li>
+          <li><a href="neighborhoods.html" class="footer__link">Neighborhoods</a></li>
+          <li><a href="market-insights.html" class="footer__link">Market Insights</a></li>
+          <li><a href="contact.html" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Services</div>
+        <ul class="footer__links">
+          <li><a href="sellers.html" class="footer__link">Seller Marketing</a></li>
+          <li><a href="buyers.html" class="footer__link">Buyer Representation</a></li>
+          <li><a href="investments.html" class="footer__link">Investment Strategy</a></li>
+          <li><a href="listings.html" class="footer__link">Off-Market Listings</a></li>
+          <li><a href="contact.html" class="footer__link">Book a Consultation</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Phone</span>
+          <a href="tel:3100000000" class="footer__contact-value footer__link">(310) 000-0000</a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Email</span>
+          <a href="mailto:jesse@jessebernsteinhomes.com" class="footer__contact-value footer__link">jesse@jessebernsteinhomes.com</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width: 1320px; margin: 0 auto;">
+      <div class="footer__bottom">
+        <p class="footer__legal">© 2025 Jesse Bernstein Homes. All rights reserved. CA DRE #00000000</p>
+        <p class="footer__dre">Coldwell Banker Realty · Equal Housing Opportunity</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script>
+    // Filter button interaction
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
