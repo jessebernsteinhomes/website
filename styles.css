@@ -523,6 +523,12 @@ input, textarea, select { font-family: inherit; }
 .split--white .split__body { background: var(--white); }
 .split--dark .split__body  { background: var(--charcoal); color: var(--white); }
 
+/* Fix for split--dark placed on section element directly */
+.split--dark { background: var(--charcoal); }
+.split--dark .t-h2 { color: var(--white); }
+.split--dark .t-lead { color: rgba(255,255,255,0.7); }
+.split--dark .t-eyebrow { color: var(--gold); }
+
 /* ============================================================
    STATS BAR
    ============================================================ */
