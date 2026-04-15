@@ -9,10 +9,7 @@
   <link rel="canonical" href="https://www.jessebernsteinhomes.com/listings.html" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .filter-bar { background: var(--white); border-bottom: 1px solid var(--sand-dark); padding: 20px 0; position: sticky; top: var(--nav-h); z-index: 100; }
-    .filter-bar__inner { max-width: var(--max-w); margin: 0 auto; padding: 0 40px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-    .filter-btn { padding: 8px 20px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid var(--sand-dark); border-radius: 100px; background: transparent; color: var(--charcoal-mid); cursor: pointer; transition: all 0.3s ease; }
-    .filter-btn:hover, .filter-btn.active { background: var(--charcoal); color: var(--white); border-color: var(--charcoal); }
+
     .listing-card--featured { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; }
     .listing-card--featured .listing-card__media { height: 100%; min-height: 340px; }
     .listing-card--featured .listing-card__body { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
@@ -64,20 +61,7 @@
       </div>
     </div>
 
-    <!-- Filter Bar -->
-    <div class="filter-bar">
-      <div class="filter-bar__inner">
-        <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--charcoal-soft); margin-right: 8px;">Filter:</span>
-        <button class="filter-btn active">All</button>
-        <button class="filter-btn">Venice Beach</button>
-        <button class="filter-btn">Marina del Rey</button>
-        <button class="filter-btn">Santa Monica</button>
-        <button class="filter-btn">Off-Market</button>
-        <button class="filter-btn">Under $2M</button>
-        <button class="filter-btn">$2M – $5M</button>
-        <button class="filter-btn">$5M+</button>
-      </div>
-    </div>
+
 
     <!-- Active Listings -->
     <section class="section section--sand">
@@ -203,7 +187,7 @@
           <article class="listing-card reveal reveal-delay-1">
             <a href="https://www.coldwellbankerhomes.com/ca/venice/2800-dell-ave/pid_62711694/" target="_blank" rel="noopener">
               <div class="listing-card__media">
-                <img src="Dell.jpg" alt="2800 Dell Ave, Venice" loading="lazy" />
+                <img src="https://m.cbhomes.com/p/510/24468775/dEc6d033f4f64DA/pds23tp.webp" alt="2800 Dell Ave, Venice" loading="lazy" onerror="this.src='dreamstime_xxl_44191926.jpg'" />
                 <span class="listing-card__badge" style="background: var(--charcoal);">Sold</span>
               </div>
               <div class="listing-card__body">
@@ -486,13 +470,6 @@
   </footer>
 
   <script src="main.js" defer></script>
-  <script>
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
-  </script>
+
 </body>
 </html>
