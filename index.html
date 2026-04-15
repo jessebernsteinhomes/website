@@ -82,8 +82,12 @@
   }
   </script>
   <style>
+    .split#about { grid-template-columns: 400px 1fr; }
+    .split#about .split__media img { object-position: center 15%; }
     @media (max-width: 768px) {
-      .split__media img { object-fit: contain; width: 100%; }
+      .split#about { grid-template-columns: 1fr; }
+      .split#about .split__media { max-height: 380px; overflow: hidden; }
+      .split#about .split__media img { object-fit: cover; object-position: center 15%; height: 380px; width: 100%; }
     }
   </style>
 </head>
