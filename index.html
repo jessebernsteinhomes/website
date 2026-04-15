@@ -81,6 +81,12 @@
     }
   }
   </script>
+  <style>
+    @media (max-width: 768px) {
+      .split__media { max-height: 320px; overflow: hidden; }
+      .split__media img { object-fit: cover; object-position: center 20%; height: 320px; width: 100%; }
+    }
+  </style>
 </head>
 <body>
 
@@ -159,9 +165,9 @@
     </div>
 
     <!-- ABOUT JESSE -->
-    <section class="split section--sand" id="about" aria-label="About Jesse Bernstein" style="grid-template-columns: 380px 1fr;">
-      <div class="split__media" style="max-width: 380px;">
-        <img src="0W3A0293.jpg" alt="Jesse Bernstein, Venice Beach real estate agent" loading="lazy" />
+    <section class="split section--sand" id="about" aria-label="About Jesse Bernstein">
+      <div class="split__media">
+        <img src="0W3A0293.jpg" alt="Jesse Bernstein, Venice Beach real estate agent" loading="lazy" style="object-position: center 20%;" />
       </div>
       <div class="split__body split--sand">
         <div class="reveal">
@@ -504,9 +510,9 @@
         <div class="footer__brand-tag">Venice Beach · Westside Los Angeles</div>
         <p class="footer__brand-desc">Venice Beach's leading real estate agent for architectural homes, canal properties, coastal luxury, and investment opportunities across the Los Angeles Westside.</p>
         <div class="footer__social">
-          <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
-          <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
-          <a href="#" class="footer__social-link" aria-label="Facebook">fb</a>
+          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">IG</a>
+          <a href="https://www.linkedin.com/in/jessebernsteinhomes/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">in</a>
+          <a href="https://www.facebook.com/Jessebernsteinrealtor/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">fb</a>
         </div>
       </div>
       <div>
