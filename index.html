@@ -85,10 +85,7 @@
     .split#about { grid-template-columns: 400px 1fr; }
     .split#about .split__media img { object-position: center 15%; }
     @media (max-width: 768px) {
-      .split#about { grid-template-columns: 1fr; gap: 0; }
-      .split#about .split__media { max-height: 380px; overflow: hidden; margin: 0; padding: 0; }
-      .split#about .split__media img { object-fit: cover; object-position: center 15%; height: 380px; width: 100%; display: block; }
-      .split#about .split__body { padding-top: 32px; }
+      .split#about .split__media { display: none; }
     }
   </style>
 </head>
