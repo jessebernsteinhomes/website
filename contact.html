@@ -121,14 +121,31 @@
       border-color: var(--charcoal);
       color: var(--white);
     }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--sand-dark);
+      margin-top: 0;
+    }
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
     @media (max-width: 900px) {
       .contact-main { grid-template-columns: 1fr; }
       .contact-sidebar { padding: 48px 32px; }
       .contact-form-area { padding: 48px 28px; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .location-grid { grid-template-columns: 1fr; gap: 40px; }
+      .location-grid .reveal-delay-2 { display: none; }
     }
     @media (max-width: 480px) {
       .contact-hero-content { padding: 0 24px 48px; }
       .inquiry-type-grid { grid-template-columns: 1fr; }
+      .contact-form .form-field { grid-column: span 2; }
     }
   </style>
 </head>
@@ -166,7 +183,6 @@
 
   <main>
 
-    <!-- Hero -->
     <div class="contact-page-hero">
       <div class="contact-hero-bg"></div>
       <div class="contact-hero-overlay"></div>
@@ -176,15 +192,11 @@
       </div>
     </div>
 
-    <!-- Contact Main -->
     <div class="contact-main">
-
-      <!-- Sidebar -->
       <div class="contact-sidebar">
         <div>
           <p class="t-eyebrow text-gold" style="margin-bottom: 20px;">Reach Jesse Directly</p>
           <p style="font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.8; margin-bottom: 36px;">Jesse is personally reachable and responds quickly. Whether you're ready to move or just starting to think about it — every conversation starts with listening.</p>
-
           <div class="contact-option">
             <div class="contact-option__icon">📞</div>
             <div>
@@ -193,7 +205,6 @@
               <div class="contact-option__sub">Available 7 days a week</div>
             </div>
           </div>
-
           <div class="contact-option">
             <div class="contact-option__icon">✉️</div>
             <div>
@@ -202,7 +213,6 @@
               <div class="contact-option__sub">Typically responds within a few hours</div>
             </div>
           </div>
-
           <div class="contact-option">
             <div class="contact-option__icon">🏡</div>
             <div>
@@ -211,7 +221,6 @@
               <div class="contact-option__sub">2740 Main Street, Santa Monica, CA 90405<br>CA DRE #02088758</div>
             </div>
           </div>
-
           <div class="contact-option">
             <div class="contact-option__icon">📍</div>
             <div>
@@ -220,24 +229,20 @@
             </div>
           </div>
         </div>
-
         <div style="margin-top: 40px;">
           <div style="font-size: 10px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 16px;">Follow Jesse</div>
           <div style="display: flex; gap: 12px;">
-            <a href="#" class="footer__social-link" aria-label="Instagram" style="border: 1px solid rgba(255,255,255,0.14); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 13px; transition: all 0.3s ease; text-decoration: none;">IG</a>
-            <a href="#" class="footer__social-link" aria-label="LinkedIn" style="border: 1px solid rgba(255,255,255,0.14); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 13px; transition: all 0.3s ease; text-decoration: none;">in</a>
-            <a href="#" class="footer__social-link" aria-label="Facebook" style="border: 1px solid rgba(255,255,255,0.14); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 13px; transition: all 0.3s ease; text-decoration: none;">fb</a>
+            <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" style="border: 1px solid rgba(255,255,255,0.14); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 13px; transition: all 0.3s ease; text-decoration: none;">IG</a>
+            <a href="https://www.linkedin.com/in/jessebernsteinhomes/" target="_blank" rel="noopener" style="border: 1px solid rgba(255,255,255,0.14); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 13px; transition: all 0.3s ease; text-decoration: none;">in</a>
+            <a href="https://www.facebook.com/Jessebernsteinrealtor/" target="_blank" rel="noopener" style="border: 1px solid rgba(255,255,255,0.14); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 13px; transition: all 0.3s ease; text-decoration: none;">fb</a>
           </div>
         </div>
       </div>
 
-      <!-- Form Area -->
       <div class="contact-form-area">
         <div class="reveal">
           <p class="t-eyebrow" style="margin-bottom: 12px;">Send a Message</p>
           <div class="divider" style="margin-bottom: 36px;"></div>
-
-          <!-- Inquiry Type Selector -->
           <div style="margin-bottom: 32px;">
             <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--charcoal-soft); margin-bottom: 12px;">I'm Interested In…</div>
             <div class="inquiry-type-grid">
@@ -247,10 +252,8 @@
               <button class="inquiry-type-btn" onclick="selectInquiry(this)">💬 General Question</button>
             </div>
           </div>
-
           <form class="js-contact-form" id="main-contact-form" novalidate>
             <div class="contact-form" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-
               <div class="form-field">
                 <label for="c-firstname">First Name</label>
                 <input type="text" id="c-firstname" name="firstname" placeholder="First name" required />
@@ -308,9 +311,7 @@
                 <textarea id="c-message" name="message" rows="5" placeholder="What are you looking for? Any specific property types, must-haves, deal-breakers? The more Jesse knows upfront, the better he can help."></textarea>
               </div>
               <div style="grid-column: span 2;">
-                <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center; padding: 18px 32px; font-size: 12px;">
-                  Send Message to Jesse
-                </button>
+                <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center; padding: 18px 32px; font-size: 12px;">Send Message to Jesse</button>
                 <p style="font-size: 12px; color: var(--charcoal-soft); text-align: center; margin-top: 14px;">Your information is private and will only be used to respond to your inquiry.</p>
               </div>
             </div>
@@ -319,7 +320,6 @@
       </div>
     </div>
 
-    <!-- Why Contact Jesse -->
     <section class="section section--sand">
       <div class="container">
         <div class="section-header section-header--center reveal">
@@ -328,7 +328,7 @@
           <h2 class="t-h2">The First Conversation<br>Is Just That.</h2>
           <p class="t-lead" style="max-width: 560px; margin: 16px auto 0;">No pressure. No scripts. Jesse picks up the phone, listens first, and gives you honest perspective on what your goals look like in today's market.</p>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--sand-dark); margin-top: 0;" class="reveal">
+        <div class="steps-grid reveal">
           <div style="background: var(--white); padding: 44px 36px;">
             <div style="font-family: var(--font-serif); font-size: 52px; font-weight: 300; color: var(--sand-dark); line-height: 1; margin-bottom: 20px;">01</div>
             <h3 style="font-family: var(--font-serif); font-size: 21px; font-weight: 400; margin-bottom: 12px;">You Reach Out</h3>
@@ -348,7 +348,6 @@
       </div>
     </section>
 
-    <!-- Testimonial -->
     <div class="section section--white">
       <div class="pullquote reveal">
         <p class="pullquote__text">"It was a pleasure working with Jesse. He was super attentive and helped us get the house we wanted."</p>
@@ -356,32 +355,19 @@
       </div>
     </div>
 
-    <!-- Map / Location placeholder -->
     <section class="section section--dark" style="padding: 80px 0;">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+        <div class="location-grid">
           <div class="reveal">
             <p class="t-eyebrow text-gold" style="margin-bottom: 16px;">Based in Venice Beach</p>
             <div class="divider"></div>
             <h2 class="t-h2 text-white" style="margin-bottom: 24px;">Jesse Is Here.<br>Right Here.</h2>
             <p class="t-lead" style="color: rgba(255,255,255,0.65); margin-bottom: 32px;">Jesse lives and works in the same neighborhoods he sells. That means he can show you a property at a moment's notice, walk you down the street to see what the neighborhood feels like, and give you the kind of firsthand perspective that no online search can provide.</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0;"></div>
-                <span style="font-size: 14px; color: rgba(255,255,255,0.65);">In-person consultations available in Venice Beach</span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0;"></div>
-                <span style="font-size: 14px; color: rgba(255,255,255,0.65);">Virtual showings and remote consultations available</span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0;"></div>
-                <span style="font-size: 14px; color: rgba(255,255,255,0.65);">Available 7 days a week — including evenings</span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0;"></div>
-                <span style="font-size: 14px; color: rgba(255,255,255,0.65);">Fluent in the market from Malibu to Culver City</span>
-              </div>
+              <div style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0;"></div><span style="font-size: 14px; color: rgba(255,255,255,0.65);">In-person consultations available in Venice Beach</span></div>
+              <div style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0;"></div><span style="font-size: 14px; color: rgba(255,255,255,0.65);">Virtual showings and remote consultations available</span></div>
+              <div style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0;"></div><span style="font-size: 14px; color: rgba(255,255,255,0.65);">Available 7 days a week — including evenings</span></div>
+              <div style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0;"></div><span style="font-size: 14px; color: rgba(255,255,255,0.65);">Fluent in the market from Malibu to Culver City</span></div>
             </div>
           </div>
           <div class="reveal reveal-delay-2" style="border-radius: 2px; overflow: hidden; aspect-ratio: 4/3; position: relative;">
@@ -403,9 +389,9 @@
         <div class="footer__brand-tag">Venice Beach · Westside Los Angeles</div>
         <p class="footer__brand-desc">Venice Beach's leading real estate advisor for architectural homes, coastal luxury, and investment properties across the Los Angeles Westside.</p>
         <div class="footer__social">
-          <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
-          <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
-          <a href="#" class="footer__social-link" aria-label="Facebook">fb</a>
+          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">IG</a>
+          <a href="https://www.linkedin.com/in/jessebernsteinhomes/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">in</a>
+          <a href="https://www.facebook.com/Jessebernsteinrealtor/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">fb</a>
         </div>
       </div>
       <div>
@@ -446,7 +432,7 @@
     </div>
     <div style="max-width: 1320px; margin: 0 auto;">
       <div class="footer__bottom">
-        <p class="footer__legal">© 2025 Jesse Bernstein Homes. All rights reserved. CA DRE #02088758</p>
+        <p class="footer__legal">© 2026 Jesse Bernstein Homes. All rights reserved. CA DRE #02088758</p>
         <p class="footer__dre">Coldwell Banker Realty · Equal Housing Opportunity</p>
       </div>
     </div>
