@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     @media (max-width: 768px) {
-      .about-photo { display: none; }
+      .about-bio-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+      .about-photo { max-height: 380px; object-fit: cover; object-position: center 20%; }
     }
   </style>
 
@@ -116,7 +117,7 @@
     <!-- Bio Section -->
     <section class="section section--white">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 400px 1fr; gap: 80px; align-items: start;">
+        <div class="about-bio-grid" style="display: grid; grid-template-columns: 400px 1fr; gap: 80px; align-items: start;">
           <div class="reveal">
             <div style="position: sticky; top: 100px;">
               <img src="0W3A0293.jpg" alt="Jesse Bernstein, Venice Beach real estate advisor" class="about-photo" style="width: 100%; border-radius: 2px; margin-bottom: 32px;" />
