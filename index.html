@@ -88,6 +88,7 @@
     .home-contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
     @media (max-width: 768px) {
       .home-contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .lifestyle-mosaic__item--hide-mobile { display: none; }
     }
   </style>
 </head>
@@ -414,7 +415,7 @@
               <span class="lifestyle-mosaic__caption">The Canals</span>
             </div>
           </div>
-          <div class="lifestyle-mosaic__item">
+          <div class="lifestyle-mosaic__item lifestyle-mosaic__item--hide-mobile">
             <img src="dreamstime_xxl_115807136.jpg" alt="Venice Beach boardwalk cyclists" loading="lazy" />
             <div class="lifestyle-mosaic__item__overlay">
               <span class="lifestyle-mosaic__caption">The Boardwalk</span>
