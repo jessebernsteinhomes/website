@@ -18,7 +18,6 @@
   <meta name="google-site-verification" content="XXXXXXXXXXXXXXXXX" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="stylesheet" href="styles.css" />
-
   <!-- Schema: Local Real Estate Agent -->
   <script type="application/ld+json">
   {
@@ -66,7 +65,6 @@
     }
   }
   </script>
-
   <!-- Schema: Website -->
   <script type="application/ld+json">
   {
@@ -87,10 +85,13 @@
     @media (max-width: 768px) {
       .split#about .split__media { display: none; }
     }
+    .home-contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    @media (max-width: 768px) {
+      .home-contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    }
   </style>
 </head>
 <body>
-
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo" aria-label="Jesse Bernstein Homes Home">
@@ -112,7 +113,6 @@
       </button>
     </div>
   </nav>
-
   <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
     <a href="about.html" class="nav__mobile-link">About</a>
     <a href="listings.html" class="nav__mobile-link">Properties</a>
@@ -123,9 +123,7 @@
     <a href="market-insights.html" class="nav__mobile-link">Market Insights</a>
     <a href="contact.html" class="btn btn--primary nav__mobile-cta">Let's Connect</a>
   </div>
-
   <main>
-
     <section class="hero" aria-label="Hero">
       <div class="hero__bg" style="background-image: url('dreamstime_xxl_139854607.jpg');"></div>
       <div class="hero__overlay"></div>
@@ -143,7 +141,6 @@
         Scroll
       </div>
     </section>
-
     <div class="stats-bar" aria-label="Key stats">
       <div class="stats-bar__grid">
         <div class="stats-bar__item">
@@ -164,7 +161,6 @@
         </div>
       </div>
     </div>
-
     <!-- ABOUT JESSE -->
     <section class="split section--sand" id="about" aria-label="About Jesse Bernstein">
       <div class="split__media">
@@ -187,7 +183,6 @@
         </div>
       </div>
     </section>
-
     <!-- AGENT VIDEO -->
     <section class="section section--white" id="video" aria-label="Meet Jesse Bernstein">
       <div class="container">
@@ -214,7 +209,6 @@
         </div>
       </div>
     </section>
-
     <!-- WHY WORK WITH JESSE -->
     <section class="section section--white" id="edge" aria-label="Why work with Jesse Bernstein">
       <div class="container">
@@ -257,7 +251,6 @@
         </div>
       </div>
     </section>
-
     <!-- SELLER MARKETING -->
     <section class="split" id="sellers" aria-label="Seller marketing approach">
       <div class="split__media" style="order: 2;">
@@ -301,7 +294,6 @@
         </div>
       </div>
     </section>
-
     <!-- BUYER / INVESTOR -->
     <section class="split section--sand" id="buyers" aria-label="Buyer and investor services">
       <div class="split__media">
@@ -342,7 +334,6 @@
         </div>
       </div>
     </section>
-
     <!-- PULLQUOTE -->
     <div class="section section--white">
       <div class="pullquote reveal">
@@ -350,7 +341,6 @@
         <p class="pullquote__attr">— Ravi Bhatia, Venice Beach Buyer</p>
       </div>
     </div>
-
     <!-- TESTIMONIALS -->
     <section class="section section--sand" id="testimonials" aria-label="Client testimonials">
       <div class="container">
@@ -396,7 +386,6 @@
         </div>
       </div>
     </section>
-
     <!-- LIFESTYLE MOSAIC -->
     <section class="section section--white" id="lifestyle" aria-label="Venice Beach lifestyle">
       <div class="container">
@@ -446,11 +435,10 @@
         </div>
       </div>
     </section>
-
     <!-- FINAL CTA -->
     <section class="section section--dark" id="contact" aria-label="Contact Jesse Bernstein">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+        <div class="home-contact-grid">
           <div class="reveal">
             <p class="t-eyebrow text-gold">Let's Get Started</p>
             <div class="divider"></div>
@@ -501,9 +489,7 @@
         </div>
       </div>
     </section>
-
   </main>
-
   <footer class="footer" role="contentinfo">
     <div class="footer__main">
       <div class="footer__brand">
@@ -559,7 +545,6 @@
       </div>
     </div>
   </footer>
-
   <script src="main.js" defer></script>
 </body>
 </html>
