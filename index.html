@@ -86,6 +86,9 @@
       .split#about .split__media { display: none; }
     }
     .home-contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    @media (min-width: 769px) {
+      .stats-bar__grid { grid-template-columns: repeat(3, 1fr); }
+    }
     @media (max-width: 768px) {
       .home-contact-grid { grid-template-columns: 1fr; gap: 48px; }
       .lifestyle-mosaic__item--hide-mobile { display: none; }
