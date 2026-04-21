@@ -8,6 +8,48 @@
   <meta name="keywords" content="sell Venice Beach home, Venice Beach listing agent, Westside Los Angeles seller agent, real estate marketing Venice Beach" />
   <link rel="canonical" href="https://www.jessebernsteinhomes.com/sellers.html" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Seller stats bar — centered 3-up, matches homepage numbers */
+    .seller-stats {
+      background: var(--charcoal);
+      padding: 28px;
+      border-radius: 2px;
+      margin-top: 8px;
+    }
+    .seller-stats__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .seller-stats__item {
+      padding: 12px;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+    .seller-stats__item:last-child {
+      border-right: none;
+    }
+    .seller-stats__num {
+      font-family: var(--font-serif);
+      font-size: 36px;
+      font-weight: 300;
+      color: var(--gold);
+    }
+    .seller-stats__label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-top: 4px;
+    }
+    @media (max-width: 520px) {
+      .seller-stats { padding: 20px 12px; }
+      .seller-stats__num { font-size: 28px; }
+    }
+  </style>
 </head>
 <body>
   <nav class="nav" role="navigation">
@@ -54,7 +96,6 @@
     </div>
   </div>
 </section>
-
 <!-- Intro Split -->
 <section class="split">
   <div class="split__media">
@@ -67,26 +108,25 @@
       <h2 class="t-h2" style="margin-bottom: 24px; color: var(--charcoal);">Strategy First.<br>Story Always.</h2>
       <p class="t-lead" style="margin-bottom: 20px; color: var(--charcoal-mid);">Most agents list a home. Jesse launches one. The difference is strategy, preparation, and marketing that captures not just the property — but the life it promises.</p>
       <p class="t-body" style="margin-bottom: 28px; color: var(--charcoal-mid);">From pricing analysis to closing day, Jesse manages every detail personally. He's on the phone with buyers' agents, monitoring offer activity, adjusting strategy in real time, and reporting back to you with the transparency you deserve.</p>
-      <div class="stats-bar" style="background: var(--charcoal); padding: 28px; border-radius: 2px; margin-top: 8px;">
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; text-align: center;">
-          <div style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.08);">
-            <div style="font-family: var(--font-serif); font-size: 36px; font-weight: 300; color: var(--gold);">98%</div>
-            <div style="font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 4px;">List-to-Sale</div>
+      <div class="seller-stats">
+        <div class="seller-stats__grid">
+          <div class="seller-stats__item">
+            <div class="seller-stats__num">17</div>
+            <div class="seller-stats__label">Homes Sold</div>
           </div>
-          <div style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.08);">
-            <div style="font-family: var(--font-serif); font-size: 36px; font-weight: 300; color: var(--gold);">21</div>
-            <div style="font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 4px;">Avg Days on Market</div>
+          <div class="seller-stats__item">
+            <div class="seller-stats__num">92%</div>
+            <div class="seller-stats__label">List-to-Sale Ratio</div>
           </div>
-          <div style="padding: 12px;">
-            <div style="font-family: var(--font-serif); font-size: 36px; font-weight: 300; color: var(--gold);">150+</div>
-            <div style="font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 4px;">Homes Sold</div>
+          <div class="seller-stats__item">
+            <div class="seller-stats__num">5★</div>
+            <div class="seller-stats__label">Client Reviews</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- Marketing Approach -->
 <section class="section section--white" id="process">
   <div class="container">
@@ -156,7 +196,6 @@
     </div>
   </div>
 </section>
-
 <!-- The Process -->
 <section class="section section--sand">
   <div class="container">
@@ -189,7 +228,6 @@
     </div>
   </div>
 </section>
-
 <!-- Testimonial -->
 <div class="section section--white">
   <div class="pullquote reveal">
@@ -197,7 +235,6 @@
     <p class="pullquote__attr">— Bella Blake, Venice Home Seller</p>
   </div>
 </div>
-
 <!-- CTA -->
 <section class="section section--dark">
   <div class="container">
