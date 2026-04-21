@@ -3,101 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Venice Beach Real Estate Agent | Jesse Bernstein | Buy & Sell Homes</title>
-  <meta name="description" content="Jesse Bernstein is Venice Beach's top-rated real estate agent. Specializing in Venice Beach homes, canal properties, Marina del Rey, and Santa Monica. Call (310) 592-1556 for a free consultation." />
-  <meta name="keywords" content="Venice Beach real estate agent, Venice Beach homes for sale, Venice Canal homes, Marina del Rey real estate, Santa Monica homes for sale, Westside Los Angeles realtor, Coldwell Banker Venice Beach" />
-  <meta property="og:title" content="Jesse Bernstein | Venice Beach Real Estate Agent" />
-  <meta property="og:description" content="Top-rated Venice Beach realtor. Architectural homes, canal properties, and coastal luxury across the Los Angeles Westside. 17 homes sold." />
+  <title>Jesse Bernstein Homes | Venice Beach Real Estate | Los Angeles Westside</title>
+  <meta name="description" content="Jesse Bernstein is Venice Beach's premier real estate advisor — architectural homes, coastal luxury, and investment properties across the Los Angeles Westside. Call (310) 592-1556." />
+  <meta name="keywords" content="Venice Beach real estate, Venice Beach realtor, Venice Beach homes for sale, Los Angeles coastal real estate, Marina del Rey homes, Westside Los Angeles real estate, architectural homes Venice Beach" />
+  <meta property="og:title" content="Jesse Bernstein Homes | Venice Beach Real Estate" />
+  <meta property="og:description" content="Venice Beach real estate, elevated. Architectural homes, coastal luxury, and investment properties on the Los Angeles Westside." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.jessebernsteinhomes.com" />
-  <meta property="og:image" content="https://www.jessebernsteinhomes.com/0W3A0293.jpg" />
-  <meta property="og:image:width" content="600" />
-  <meta property="og:image:height" content="600" />
   <link rel="canonical" href="https://www.jessebernsteinhomes.com" />
-  <!-- Replace XXXXXXXXXXXXXXXXX with your Google Search Console verification code -->
-  <meta name="google-site-verification" content="XXXXXXXXXXXXXXXXX" />
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="stylesheet" href="styles.css" />
-  <!-- Schema: Local Real Estate Agent -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Jesse Bernstein",
-    "image": "https://www.jessebernsteinhomes.com/0W3A0293.jpg",
-    "url": "https://www.jessebernsteinhomes.com",
-    "telephone": "+13105921556",
-    "email": "jesse.bernstein@cbrealty.com",
-    "description": "Venice Beach's premier real estate advisor specializing in architectural homes, canal properties, coastal luxury, and investment opportunities across the Los Angeles Westside.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2740 Main Street",
-      "addressLocality": "Santa Monica",
-      "addressRegion": "CA",
-      "postalCode": "90405",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 33.9850,
-      "longitude": -118.4695
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Venice Beach"},
-      {"@type": "City", "name": "Marina del Rey"},
-      {"@type": "City", "name": "Santa Monica"},
-      {"@type": "City", "name": "Pacific Palisades"},
-      {"@type": "City", "name": "Mar Vista"},
-      {"@type": "City", "name": "Playa del Rey"}
-    ],
-    "memberOf": {
-      "@type": "Organization",
-      "name": "Coldwell Banker Realty"
-    },
-    "hasCredential": "CA DRE #02088758",
-    "sameAs": [
-      "https://www.coldwellbankerhomes.com/ca/santa-monica/agent/jesse-bernstein/aid_220479/"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "9"
-    }
-  }
-  </script>
-  <!-- Schema: Website -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Jesse Bernstein Homes",
-    "url": "https://www.jessebernsteinhomes.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.jessebernsteinhomes.com/listings.html",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
   <style>
-    .split#about { grid-template-columns: 400px 1fr; }
-    .split#about .split__media img { object-position: center 15%; }
-    @media (max-width: 768px) {
-      .split#about .split__media { display: none; }
+    /* Instagram / Follow Along grid */
+    .instagram-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+      margin-top: 40px;
     }
-    .home-contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-    @media (min-width: 769px) {
-      .stats-bar__grid { grid-template-columns: repeat(3, 1fr); }
+    .instagram-tile {
+      display: block;
+      position: relative;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 2px;
     }
-    @media (max-width: 768px) {
-      .home-contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    .instagram-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
     }
-    .ig-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; text-decoration: none; max-width: 1100px; margin: 0 auto; }
-    .ig-grid__item { aspect-ratio: 1 / 1; overflow: hidden; background: rgba(0,0,0,0.06); position: relative; }
-    .ig-grid__item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
-    .ig-grid__item:hover img { transform: scale(1.05); }
-    @media (max-width: 768px) {
-      .ig-grid { grid-template-columns: repeat(3, 1fr); gap: 4px; }
+    .instagram-tile:hover img { transform: scale(1.05); }
+    .instagram-tile__badge {
+      position: absolute;
+      inset: auto 0 16px 0;
+      text-align: center;
+      color: #fff;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 22px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      pointer-events: none;
+    }
+    @media (max-width: 960px) {
+      .instagram-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .instagram-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -154,12 +106,16 @@
     <div class="stats-bar" aria-label="Key stats">
       <div class="stats-bar__grid">
         <div class="stats-bar__item">
-          <div class="stats-bar__num" data-count="17" data-suffix="">17</div>
+          <div class="stats-bar__num" data-count="150" data-suffix="+">150+</div>
           <div class="stats-bar__label">Homes Sold</div>
         </div>
         <div class="stats-bar__item">
-          <div class="stats-bar__num" data-count="92" data-suffix="%">92%</div>
+          <div class="stats-bar__num" data-count="98" data-suffix="%">98%</div>
           <div class="stats-bar__label">List-to-Sale Ratio</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__num" data-count="12" data-suffix="+">12+</div>
+          <div class="stats-bar__label">Years on the Westside</div>
         </div>
         <div class="stats-bar__item">
           <div class="stats-bar__num" data-count="5" data-suffix="★">5★</div>
@@ -170,15 +126,15 @@
     <!-- ABOUT JESSE -->
     <section class="split section--sand" id="about" aria-label="About Jesse Bernstein">
       <div class="split__media">
-        <img src="0W3A0293.jpg" alt="Jesse Bernstein, Venice Beach real estate agent" loading="lazy" style="object-position: center 20%;" />
+        <img src="0W3A0293.jpg" alt="Jesse Bernstein, Venice Beach real estate agent" loading="lazy" />
       </div>
       <div class="split__body split--sand">
         <div class="reveal">
           <p class="t-eyebrow" style="color: var(--gold);">Your Venice Beach Advisor</p>
           <div class="divider"></div>
           <h2 class="t-h2" style="margin-bottom: 24px; color: var(--charcoal);">Local Expertise.<br>Personal Service.</h2>
-          <p class="t-lead" style="margin-bottom: 20px; color: var(--charcoal-mid);">Jesse Bernstein knows Venice Beach real estate. With deep roots in the community and an eye for architectural potential, he brings a uniquely personal approach to buying and selling on the Westside.</p>
-          <p class="t-body" style="margin-bottom: 32px; color: var(--charcoal-mid);">Licensed in both California and Texas, Jesse specializes in single-family homes, income properties, and commercial real estate. As an investor himself, with several income properties in Texas and a home base in Venice Beach, he brings both personal experience and market insight to every client relationship. With deep roots in the community and a strong eye for architecture, design, and long-term potential, Jesse offers a personal, hands-on approach to buying and selling real estate. He works with creative professionals, entrepreneurs, investors, and discerning buyers seeking more than just representation. They want a trusted advisor who understands the market, the lifestyle, and the value behind a great opportunity.</p>
+          <p class="t-lead" style="margin-bottom: 20px; color: var(--charcoal-mid);">Jesse Bernstein lives and breathes Venice Beach real estate. With deep roots in the community and an eye for architectural potential, he brings a uniquely personal approach to buying and selling on the Westside.</p>
+          <p class="t-body" style="margin-bottom: 32px; color: var(--charcoal-mid);">Licensed in both California and Texas, Jesse specializes in Venice Beach homes, canal properties, architectural residences, and investment opportunities throughout Marina del Rey, Santa Monica, Pacific Palisades, and the broader Westside. His clients are creative professionals, entrepreneurs, and discerning buyers who want more than a transaction — they want a trusted local guide.</p>
           <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px;">
             <span class="tag">Venice Beach Specialist</span>
             <span class="tag">Licensed CA &amp; TX</span>
@@ -186,32 +142,6 @@
             <span class="tag">Investment Strategy</span>
           </div>
           <a href="about.html" class="btn btn--outline-dark">Meet Jesse</a>
-        </div>
-      </div>
-    </section>
-    <!-- AGENT VIDEO -->
-    <section class="section section--white" id="video" aria-label="Meet Jesse Bernstein">
-      <div class="container">
-        <div class="section-header section-header--center reveal" style="margin-bottom: 40px;">
-          <p class="t-eyebrow">See Jesse in Action</p>
-          <div class="divider divider--center"></div>
-          <h2 class="t-h2">Meet Your Realtor</h2>
-          <p class="t-lead" style="max-width: 560px; margin: 16px auto 0;">Get a feel for who Jesse is and how he works.</p>
-        </div>
-        <div class="reveal" style="max-width: 900px; margin: 0 auto;">
-          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 2px; box-shadow: 0 20px 60px rgba(0,0,0,0.15);">
-            <iframe
-              src="https://www.youtube.com/embed/1c6q7IWtFIY"
-              title="Meet Jesse Bernstein — Venice Beach Real Estate Agent"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            ></iframe>
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px;" class="reveal">
-          <a href="about.html" class="btn btn--outline-dark">Learn More About Jesse</a>
         </div>
       </div>
     </section>
@@ -257,10 +187,168 @@
         </div>
       </div>
     </section>
+    <!-- FEATURED LISTINGS -->
+    <section class="section section--sand" id="listings" aria-label="Featured properties">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="t-eyebrow">Active &amp; Featured</p>
+          <div class="divider"></div>
+          <h2 class="t-h2">Current Listings</h2>
+          <p class="t-lead" style="max-width: 520px; margin-top: 16px;">Architectural homes, coastal compounds, and investment opportunities across Venice Beach and the Westside.</p>
+        </div>
+        <div class="listings-grid" style="grid-template-columns: repeat(2, 1fr);">
+          <article class="listing-card reveal reveal-delay-1">
+            <a href="https://www.coldwellbankerhomes.com/ca/venice/822-superba-ave/pid_69923093/" target="_blank" rel="noopener">
+              <div class="listing-card__media">
+                <img src="https://m.cbhomes.com/p/510/26659839/4Dd98af410C8447/pds23tp.webp" alt="822 Superba Ave, Venice" loading="lazy" />
+                <span class="listing-card__badge">Active</span>
+              </div>
+              <div class="listing-card__body">
+                <div class="listing-card__price">$5,299,000</div>
+                <div class="listing-card__address">822 Superba Ave, Venice, CA 90291</div>
+                <div class="listing-card__details">
+                  <div class="listing-card__detail">4 <span>Beds</span></div>
+                  <div class="listing-card__detail">4 <span>Baths</span></div>
+                  <div class="listing-card__detail">4,024 <span>Sq Ft</span></div>
+                  <div class="listing-card__detail">New <span>Construction</span></div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="listing-card reveal reveal-delay-2">
+            <a href="https://www.coldwellbankerhomes.com/ca/venice/1430-abbot-kinney-blvd/pid_69462908/" target="_blank" rel="noopener">
+              <div class="listing-card__media">
+                <img src="https://m.cbhomes.com/p/510/26646887/4a9aF08326164A2/pds23tp.webp" alt="1430 Abbot Kinney Blvd, Venice" loading="lazy" />
+                <span class="listing-card__badge">Active</span>
+              </div>
+              <div class="listing-card__body">
+                <div class="listing-card__price">$8,495,000</div>
+                <div class="listing-card__address">1430 Abbot Kinney Blvd, Venice, CA 90291</div>
+                <div class="listing-card__details">
+                  <div class="listing-card__detail">3 <span>Beds</span></div>
+                  <div class="listing-card__detail">4 <span>Baths</span></div>
+                  <div class="listing-card__detail">3,010 <span>Sq Ft</span></div>
+                  <div class="listing-card__detail">Rooftop <span>Deck</span></div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="listing-card reveal reveal-delay-3">
+            <a href="https://www.coldwellbankerhomes.com/ca/marina-del-rey/111-eastwind-st/pid_70332010/" target="_blank" rel="noopener">
+              <div class="listing-card__media">
+                <img src="https://m.cbhomes.com/p/510/26665671/d080C9211658458/pds23tp.webp" alt="111 Eastwind St, Marina del Rey" loading="lazy" />
+                <span class="listing-card__badge">Active</span>
+              </div>
+              <div class="listing-card__body">
+                <div class="listing-card__price">$3,995,000</div>
+                <div class="listing-card__address">111 Eastwind St, Marina del Rey, CA 90292</div>
+                <div class="listing-card__details">
+                  <div class="listing-card__detail">3 <span>Beds</span></div>
+                  <div class="listing-card__detail">3 <span>Baths</span></div>
+                  <div class="listing-card__detail">4,429 <span>Sq Ft</span></div>
+                  <div class="listing-card__detail">Ocean <span>Views</span></div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="listing-card reveal reveal-delay-4">
+            <a href="https://www.coldwellbankerhomes.com/ca/santa-monica/681-brooktree-rd/pid_68648543/" target="_blank" rel="noopener">
+              <div class="listing-card__media">
+                <img src="https://m.cbhomes.com/p/510/25610881/477AA26215C048D/pds23tp.webp" alt="681 Brooktree Rd, Santa Monica" loading="lazy" />
+                <span class="listing-card__badge">Active</span>
+              </div>
+              <div class="listing-card__body">
+                <div class="listing-card__price">$7,995,000</div>
+                <div class="listing-card__address">681 Brooktree Rd, Santa Monica, CA 90402</div>
+                <div class="listing-card__details">
+                  <div class="listing-card__detail">5 <span>Beds</span></div>
+                  <div class="listing-card__detail">5 <span>Baths</span></div>
+                  <div class="listing-card__detail">4,628 <span>Sq Ft</span></div>
+                  <div class="listing-card__detail">Rustic <span>Canyon</span></div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div style="text-align: center; margin-top: 48px;" class="reveal">
+          <a href="listings.html" class="btn btn--outline-dark">View All Properties</a>
+        </div>
+      </div>
+    </section>
+    <!-- NEIGHBORHOODS -->
+    <section class="section section--white" id="neighborhoods" aria-label="Westside neighborhoods">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="t-eyebrow">Where Jesse Works Best</p>
+          <div class="divider divider--center"></div>
+          <h2 class="t-h2">Westside Neighborhoods</h2>
+          <p class="t-lead" style="max-width: 560px; margin: 16px auto 0;">Each neighborhood along the Westside has its own character. Jesse knows them all — their streets, their values, and their stories.</p>
+        </div>
+        <div class="neighborhoods-grid">
+          <div class="nbhd-card reveal reveal-delay-1">
+            <img class="nbhd-card__img" src="dreamstime_xxl_35463659.jpg" alt="Venice Beach real estate" loading="lazy" />
+            <div class="nbhd-card__overlay"></div>
+            <div class="nbhd-card__body">
+              <h3 class="nbhd-card__name">Venice Beach</h3>
+              <p class="nbhd-card__desc">Canals, walkstreets, Abbot Kinney, and beachfront compounds. The most creative, architecturally rich neighborhood in Los Angeles.</p>
+              <a href="neighborhoods.html#venice" class="nbhd-card__link">Explore Venice →</a>
+            </div>
+          </div>
+          <div class="nbhd-card reveal reveal-delay-2">
+            <img class="nbhd-card__img" src="dreamstime_xxl_89292312.jpg" alt="Marina del Rey real estate" loading="lazy" />
+            <div class="nbhd-card__overlay"></div>
+            <div class="nbhd-card__body">
+              <h3 class="nbhd-card__name">Marina del Rey</h3>
+              <p class="nbhd-card__desc">California's largest man-made small-craft harbor. Waterfront condos, marina homes, and spectacular bay views minutes from Venice.</p>
+              <a href="neighborhoods.html#marina" class="nbhd-card__link">Explore Marina →</a>
+            </div>
+          </div>
+          <div class="nbhd-card reveal reveal-delay-3">
+            <img class="nbhd-card__img" src="dreamstime_xxl_51127917.jpg" alt="Santa Monica real estate" loading="lazy" />
+            <div class="nbhd-card__overlay"></div>
+            <div class="nbhd-card__body">
+              <h3 class="nbhd-card__name">Santa Monica</h3>
+              <p class="nbhd-card__desc">Third Street Promenade, Montana Ave, and world-class beach access — a sophisticated coastal city with some of LA's most coveted addresses.</p>
+              <a href="neighborhoods.html#santamonica" class="nbhd-card__link">Explore Santa Monica →</a>
+            </div>
+          </div>
+          <div class="nbhd-card reveal reveal-delay-1">
+            <img class="nbhd-card__img" src="dreamstime_xxl_143947191.jpg" alt="Pacific Palisades real estate" loading="lazy" />
+            <div class="nbhd-card__overlay"></div>
+            <div class="nbhd-card__body">
+              <h3 class="nbhd-card__name">Pacific Palisades</h3>
+              <p class="nbhd-card__desc">Clifftop estates, canyon homes, and exclusive addresses where the Santa Monica Mountains meet the Pacific. Serene Westside luxury.</p>
+              <a href="neighborhoods.html#palisades" class="nbhd-card__link">Explore Palisades →</a>
+            </div>
+          </div>
+          <div class="nbhd-card reveal reveal-delay-2">
+            <img class="nbhd-card__img" src="dreamstime_xxl_357933610.jpg" alt="Mar Vista real estate" loading="lazy" />
+            <div class="nbhd-card__overlay"></div>
+            <div class="nbhd-card__body">
+              <h3 class="nbhd-card__name">Mar Vista</h3>
+              <p class="nbhd-card__desc">The Westside's most beloved neighborhood for first-time buyers and upgraders alike — great schools, strong values, and a tight-knit community feel.</p>
+              <a href="neighborhoods.html#marvista" class="nbhd-card__link">Explore Mar Vista →</a>
+            </div>
+          </div>
+          <div class="nbhd-card reveal reveal-delay-3">
+            <img class="nbhd-card__img" src="dreamstime_xxl_3115626.jpg" alt="Playa del Rey real estate" loading="lazy" />
+            <div class="nbhd-card__overlay"></div>
+            <div class="nbhd-card__body">
+              <h3 class="nbhd-card__name">Playa del Rey</h3>
+              <p class="nbhd-card__desc">A quiet coastal enclave with wide beaches, bluff-top homes, and arguably the best sunsets on the Westside. An underrated gem.</p>
+              <a href="neighborhoods.html#playadelrey" class="nbhd-card__link">Explore Playa del Rey →</a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 48px;" class="reveal">
+          <a href="neighborhoods.html" class="btn btn--outline-dark">Full Neighborhood Guide</a>
+        </div>
+      </div>
+    </section>
     <!-- SELLER MARKETING -->
     <section class="split" id="sellers" aria-label="Seller marketing approach">
       <div class="split__media" style="order: 2;">
-        <img src="dreamstime_xxl_140285793.jpg" alt="Venice Beach home for sale at golden hour" loading="lazy" />
+        <img src="dreamstime_xxl_140285793.jpg" alt="Venice Beach at golden hour" loading="lazy" />
       </div>
       <div class="split__body split--dark" style="order: 1;">
         <div class="reveal">
@@ -347,6 +435,42 @@
         <p class="pullquote__attr">— Ravi Bhatia, Venice Beach Buyer</p>
       </div>
     </div>
+    <!-- INSTAGRAM / FOLLOW ALONG -->
+    <section class="section section--sand" id="instagram" aria-label="Follow Jesse on Instagram">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="t-eyebrow">Follow Along</p>
+          <div class="divider divider--center"></div>
+          <h2 class="t-h2">@itsjessebernstein</h2>
+          <p class="t-lead" style="max-width: 560px; margin: 16px auto 0;">Venice listings, lifestyle, and behind-the-scenes moments.</p>
+        </div>
+        <div class="instagram-grid reveal">
+          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="instagram-tile">
+            <img src="ig-1.jpg" alt="Jesse Bernstein Instagram post" loading="lazy" />
+          </a>
+          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="instagram-tile">
+            <img src="ig-2.jpg" alt="Just sold Venice home" loading="lazy" />
+            <span class="instagram-tile__badge">Just sold!</span>
+          </a>
+          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="instagram-tile">
+            <img src="ig-3.jpg" alt="Jesse Bernstein behind the scenes" loading="lazy" />
+          </a>
+          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="instagram-tile">
+            <img src="ig-4.jpg" alt="Jesse Bernstein with friends" loading="lazy" />
+          </a>
+          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="instagram-tile">
+            <img src="ig-5.jpg" alt="Just sold Westside property" loading="lazy" />
+            <span class="instagram-tile__badge">Just sold!</span>
+          </a>
+          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="instagram-tile">
+            <img src="ig-6.jpg" alt="Jesse Bernstein with friend" loading="lazy" />
+          </a>
+        </div>
+        <div style="text-align: center; margin-top: 40px;" class="reveal">
+          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="btn btn--outline-dark">Follow on Instagram</a>
+        </div>
+      </div>
+    </section>
     <!-- TESTIMONIALS -->
     <section class="section section--sand" id="testimonials" aria-label="Client testimonials">
       <div class="container">
@@ -358,32 +482,38 @@
         <div class="testimonials-grid">
           <div class="testi-card reveal reveal-delay-1">
             <div class="testi-card__stars">★★★★★</div>
-            <p class="testi-card__text" style="font-size: 16px; line-height: 1.75;">Jesse took the time to understand exactly what I was looking for, demonstrating exceptional market knowledge and a deep understanding of the Venice area. He negotiated skillfully on my behalf, ensuring I got the best possible deal. Five stars all the way!</p>
+            <div class="testi-card__quote">"</div>
+            <p class="testi-card__text">Jesse took the time to understand exactly what I was looking for, demonstrating exceptional market knowledge and a deep understanding of the Venice area. He negotiated skillfully on my behalf, ensuring I got the best possible deal. Five stars all the way!</p>
             <div class="testi-card__author">Bryan Glinski · Venice Beach Buyer</div>
           </div>
           <div class="testi-card reveal reveal-delay-2">
             <div class="testi-card__stars">★★★★★</div>
-            <p class="testi-card__text" style="font-size: 16px; line-height: 1.75;">As first-time homebuyers, we got the number we wanted and the property we wanted in Venice. We literally could not have done this without him. He went above and beyond and made a challenging process seem straightforward, fun, and even easy.</p>
+            <div class="testi-card__quote">"</div>
+            <p class="testi-card__text">As first-time homebuyers, we got the number we wanted and the property we wanted in Venice. We literally could not have done this without him. He went above and beyond and made a challenging process seem straightforward, fun, and even easy.</p>
             <div class="testi-card__author">Ravi Bhatia · Venice Beach Buyer</div>
           </div>
           <div class="testi-card reveal reveal-delay-3">
             <div class="testi-card__stars">★★★★★</div>
-            <p class="testi-card__text" style="font-size: 16px; line-height: 1.75;">Jesse is a calming presence during the stressful time of buying a house. He gets the job done really well, but also lends humor and lightness in tough moments. Thanks for helping us build our nest and raise our family.</p>
+            <div class="testi-card__quote">"</div>
+            <p class="testi-card__text">Jesse is a calming presence during the stressful time of buying a house. He gets the job done really well, but also lends humor and lightness in tough moments. Thanks for helping us build our nest and raise our family.</p>
             <div class="testi-card__author">Tyler Elizabeth Lewis · Home Buyer</div>
           </div>
           <div class="testi-card reveal reveal-delay-1">
             <div class="testi-card__stars">★★★★★</div>
-            <p class="testi-card__text" style="font-size: 16px; line-height: 1.75;">We listed our home with Jesse and couldn't be happier. He was a great communicator, very professional, and our home sold for over asking. Highly recommend!</p>
+            <div class="testi-card__quote">"</div>
+            <p class="testi-card__text">We listed our home with Jesse and couldn't be happier. He was a great communicator, very professional, and our home sold for over asking. Highly recommend!</p>
             <div class="testi-card__author">Bella Blake · Venice Home Seller</div>
           </div>
           <div class="testi-card reveal reveal-delay-2">
             <div class="testi-card__stars">★★★★★</div>
-            <p class="testi-card__text" style="font-size: 16px; line-height: 1.75;">He either always had the answers or he immediately hunted them down. The whole escrow process was made easy for me. He connected me to everyone I needed — and the icing on the total-competence cake is that he's a genuinely nice person.</p>
+            <div class="testi-card__quote">"</div>
+            <p class="testi-card__text">He either always had the answers or he immediately hunted them down. The whole escrow process was made easy for me. He connected me to everyone I needed — and the icing on the total-competence cake is that he's a genuinely nice person.</p>
             <div class="testi-card__author">Joan Jackson · Playa Vista Buyer</div>
           </div>
           <div class="testi-card reveal reveal-delay-3">
             <div class="testi-card__stars">★★★★★</div>
-            <p class="testi-card__text" style="font-size: 16px; line-height: 1.75;">Jesse is extremely personable, easy to work with, responsive, flexible, and clearly knowledgeable about the Westside housing market. Our weekly housing searches often felt like a hang with a friend.</p>
+            <div class="testi-card__quote">"</div>
+            <p class="testi-card__text">Jesse is extremely personable, easy to work with, responsive, flexible, and clearly knowledgeable about the Westside housing market. Our weekly housing searches often felt like a hang with a friend.</p>
             <div class="testi-card__author">Paul Maler · Westside Buyer</div>
           </div>
         </div>
@@ -409,9 +539,9 @@
             </div>
           </div>
           <div class="lifestyle-mosaic__item">
-            <img src="florian-wehde-YcYHHxKKlTk-unsplash.jpg" alt="Windward Avenue Venice Beach" loading="lazy" />
+            <img src="florian-wehde-YcYHHxKKlTk-unsplash.jpg" alt="Venice sign street" loading="lazy" />
             <div class="lifestyle-mosaic__item__overlay">
-              <span class="lifestyle-mosaic__caption">Windward Avenue</span>
+              <span class="lifestyle-mosaic__caption">Venice Boulevard</span>
             </div>
           </div>
           <div class="lifestyle-mosaic__item">
@@ -421,57 +551,29 @@
             </div>
           </div>
           <div class="lifestyle-mosaic__item">
-            <img src="dreamstime_xxl_40497123.jpg" alt="Venice Beach boardwalk shops and murals" loading="lazy" />
+            <img src="dreamstime_xxl_115807136.jpg" alt="Venice Beach boardwalk cyclists" loading="lazy" />
+            <div class="lifestyle-mosaic__item__overlay">
+              <span class="lifestyle-mosaic__caption">The Boardwalk</span>
+            </div>
+          </div>
+          <div class="lifestyle-mosaic__item">
+            <img src="dreamstime_xl_46023295.jpg" alt="Ocean Front and Market Street, Venice" loading="lazy" />
             <div class="lifestyle-mosaic__item__overlay">
               <span class="lifestyle-mosaic__caption">Ocean Front Walk</span>
             </div>
           </div>
-          <div class="lifestyle-mosaic__item">
-            <img src="venice-palm-trees.jpg" alt="Venice Beach palm trees with grassy lawn and distant mountains" loading="lazy" />
-            <div class="lifestyle-mosaic__item__overlay">
-              <span class="lifestyle-mosaic__caption">Venice Palm Trees</span>
-            </div>
-          </div>
-          <div class="lifestyle-mosaic__item">
-            <img src="AK.jpg" alt="Abbot Kinney Boulevard Venice Beach" loading="lazy" />
-            <div class="lifestyle-mosaic__item__overlay">
-              <span class="lifestyle-mosaic__caption">Abbot Kinney</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- INSTAGRAM GRID -->
-    <section class="section section--sand" id="instagram" aria-label="Follow Jesse on Instagram">
-      <div class="container">
-        <div class="section-header section-header--center reveal" style="margin-bottom: 40px;">
-          <p class="t-eyebrow" style="color: var(--gold);">Follow Along</p>
-          <div class="divider divider--center"></div>
-          <h2 class="t-h2">@itsjessebernstein</h2>
-          <p class="t-lead" style="max-width: 560px; margin: 16px auto 0;">Venice listings, lifestyle, and behind-the-scenes moments.</p>
-        </div>
-        <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="ig-grid reveal" aria-label="Follow @itsjessebernstein on Instagram">
-          <div class="ig-grid__item"><img src="ig-1.jpg" alt="" loading="lazy" /></div>
-          <div class="ig-grid__item"><img src="ig-2.jpg" alt="" loading="lazy" /></div>
-          <div class="ig-grid__item"><img src="ig-3.jpg" alt="" loading="lazy" /></div>
-          <div class="ig-grid__item"><img src="ig-4.jpg" alt="" loading="lazy" /></div>
-          <div class="ig-grid__item"><img src="ig-5.jpg" alt="" loading="lazy" /></div>
-          <div class="ig-grid__item"><img src="ig-6.jpg" alt="" loading="lazy" /></div>
-        </a>
-        <div style="text-align: center; margin-top: 40px;" class="reveal">
-          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="btn btn--outline-dark">Follow on Instagram</a>
         </div>
       </div>
     </section>
     <!-- FINAL CTA -->
     <section class="section section--dark" id="contact" aria-label="Contact Jesse Bernstein">
       <div class="container">
-        <div class="home-contact-grid">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
           <div class="reveal">
             <p class="t-eyebrow text-gold">Let's Get Started</p>
             <div class="divider"></div>
             <h2 class="t-h2 text-white" style="margin-bottom: 24px;">Let's Talk About<br>Your Next Move.</h2>
-            <p class="t-lead" style="color: rgba(255,255,255,0.65); margin-bottom: 40px;">Whether you're ready to list, starting to search, or making the move to Texas — Jesse is the kind of realtor who picks up the phone. Let's have a real conversation.</p>
+            <p class="t-lead" style="color: rgba(255,255,255,0.65); margin-bottom: 40px;">Whether you're ready to list, starting to search, or exploring options — Jesse is the kind of advisor who picks up the phone. Let's have a real conversation.</p>
             <div class="contact-info">
               <div class="contact-info__item">
                 <span class="contact-info__label">Phone</span>
@@ -523,11 +625,11 @@
       <div class="footer__brand">
         <div class="footer__brand-name">Jesse Bernstein</div>
         <div class="footer__brand-tag">Venice Beach · Westside Los Angeles</div>
-        <p class="footer__brand-desc">Venice Beach's leading real estate agent for architectural homes, canal properties, coastal luxury, and investment opportunities across the Los Angeles Westside.</p>
+        <p class="footer__brand-desc">Venice Beach's leading real estate advisor for architectural homes, coastal luxury, and investment properties across the Los Angeles Westside.</p>
         <div class="footer__social">
-          <a href="https://www.instagram.com/itsjessebernstein/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">IG</a>
-          <a href="https://www.linkedin.com/in/jessebernsteinhomes/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">in</a>
-          <a href="https://www.facebook.com/Jessebernsteinrealtor/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">fb</a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="footer__social-link" aria-label="Facebook">fb</a>
         </div>
       </div>
       <div>
@@ -543,11 +645,11 @@
       <div>
         <div class="footer__col-title">Services</div>
         <ul class="footer__links">
-          <li><a href="sellers.html" class="footer__link">Sell My Home</a></li>
-          <li><a href="buyers.html" class="footer__link">Buy a Home</a></li>
-          <li><a href="investments.html" class="footer__link">Investment Properties</a></li>
+          <li><a href="sellers.html" class="footer__link">Seller Marketing</a></li>
+          <li><a href="buyers.html" class="footer__link">Buyer Representation</a></li>
+          <li><a href="investments.html" class="footer__link">Investment Strategy</a></li>
           <li><a href="listings.html" class="footer__link">Off-Market Listings</a></li>
-          <li><a href="contact.html" class="footer__link">Free Consultation</a></li>
+          <li><a href="contact.html" class="footer__link">Book a Consultation</a></li>
         </ul>
       </div>
       <div>
