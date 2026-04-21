@@ -15,10 +15,31 @@
     .market-stat-card__trend { font-size: 13px; color: var(--charcoal-soft); }
     .market-stat-card__trend.up { color: #4a7c59; font-weight: 500; }
     .market-stat-card__trend.down { color: #8b3a3a; font-weight: 500; }
+
+    /* Responsive grids for this page */
+    .market-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .commentary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    @media (max-width: 960px) {
+      .market-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .commentary-grid { grid-template-columns: 1fr; gap: 48px; }
+    }
+    @media (max-width: 520px) {
+      .market-stat-card { padding: 24px 20px; }
+      .market-stat-card__num { font-size: 36px; }
+      .market-stat-card__label { font-size: 10px; }
+    }
   </style>
 </head>
 <body>
-
   <nav class="nav" role="navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
@@ -48,9 +69,7 @@
     <a href="market-insights.html" class="nav__mobile-link">Market Insights</a>
     <a href="contact.html" class="btn btn--primary nav__mobile-cta">Let's Connect</a>
   </div>
-
   <main>
-
     <div class="page-hero">
       <div class="page-hero__bg" style="background-image: url('dreamstime_xxl_139854607.jpg');"></div>
       <div class="page-hero__overlay"></div>
@@ -59,7 +78,6 @@
         <h1 class="t-h1 text-white">Market Insights</h1>
       </div>
     </div>
-
     <!-- Market Snapshot -->
     <section class="section section--sand">
       <div class="container">
@@ -69,7 +87,7 @@
           <h2 class="t-h2">Venice Beach &amp; Westside<br>Market at a Glance</h2>
           <p class="t-lead" style="max-width: 560px; margin-top: 16px;">Key market indicators for the Venice Beach and Westside Los Angeles real estate market, updated quarterly.</p>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;" class="reveal">
+        <div class="market-stats-grid reveal">
           <div class="market-stat-card">
             <div class="market-stat-card__label">Median Sale Price · Venice</div>
             <div class="market-stat-card__num">~$2.0M</div>
@@ -93,11 +111,10 @@
         </div>
       </div>
     </section>
-
     <!-- Market Commentary -->
     <section class="section section--white">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+        <div class="commentary-grid">
           <div class="reveal">
             <p class="t-eyebrow">Jesse's Read</p>
             <div class="divider"></div>
@@ -156,7 +173,6 @@
         </div>
       </div>
     </section>
-
     <!-- Blog Articles -->
     <section class="section section--sand">
       <div class="container">
@@ -166,7 +182,6 @@
           <h2 class="t-h2">Latest Perspectives</h2>
         </div>
         <div class="blog-grid">
-
           <article class="blog-card reveal reveal-delay-1">
             <a href="venice-beach-home-prices-2026.html">
               <div class="blog-card__media">
@@ -180,7 +195,6 @@
               </div>
             </a>
           </article>
-
           <article class="blog-card reveal reveal-delay-2">
             <a href="venice-canals-vs-abbot-kinney.html">
               <div class="blog-card__media">
@@ -194,7 +208,6 @@
               </div>
             </a>
           </article>
-
           <article class="blog-card reveal reveal-delay-3">
             <a href="buying-a-home-venice-beach.html">
               <div class="blog-card__media">
@@ -208,11 +221,9 @@
               </div>
             </a>
           </article>
-
         </div>
       </div>
     </section>
-
     <!-- Newsletter CTA -->
     <section class="section section--dark">
       <div class="container--narrow text-center reveal">
@@ -227,9 +238,7 @@
         <p style="font-size: 12px; color: rgba(255,255,255,0.35); margin-top: 16px;">No spam. Unsubscribe anytime.</p>
       </div>
     </section>
-
   </main>
-
   <footer class="footer" role="contentinfo">
     <div class="footer__main">
       <div class="footer__brand">
