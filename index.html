@@ -51,6 +51,19 @@
     @media (max-width: 480px) {
       .instagram-grid { grid-template-columns: repeat(2, 1fr); }
     }
+    /* Centered stats bar (3-up) */
+    .stats-bar__grid--centered {
+      max-width: 900px;
+      margin: 0 auto;
+      grid-template-columns: repeat(3, 1fr) !important;
+      justify-items: center;
+    }
+    @media (max-width: 768px) {
+      .stats-bar__grid--centered {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 8px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -104,18 +117,14 @@
       </div>
     </section>
     <div class="stats-bar" aria-label="Key stats">
-      <div class="stats-bar__grid">
+      <div class="stats-bar__grid stats-bar__grid--centered">
         <div class="stats-bar__item">
-          <div class="stats-bar__num" data-count="150" data-suffix="+">150+</div>
+          <div class="stats-bar__num" data-count="17" data-suffix="">17</div>
           <div class="stats-bar__label">Homes Sold</div>
         </div>
         <div class="stats-bar__item">
-          <div class="stats-bar__num" data-count="98" data-suffix="%">98%</div>
+          <div class="stats-bar__num" data-count="92" data-suffix="%">92%</div>
           <div class="stats-bar__label">List-to-Sale Ratio</div>
-        </div>
-        <div class="stats-bar__item">
-          <div class="stats-bar__num" data-count="12" data-suffix="+">12+</div>
-          <div class="stats-bar__label">Years on the Westside</div>
         </div>
         <div class="stats-bar__item">
           <div class="stats-bar__num" data-count="5" data-suffix="★">5★</div>

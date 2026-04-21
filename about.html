@@ -16,6 +16,19 @@
       .about-bio-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
       .about-photo { max-height: 380px; object-fit: cover; object-position: center 20%; }
     }
+    /* Centered stats bar (3-up) */
+    .stats-bar__grid--centered {
+      max-width: 900px;
+      margin: 0 auto;
+      grid-template-columns: repeat(3, 1fr) !important;
+      justify-items: center;
+    }
+    @media (max-width: 768px) {
+      .stats-bar__grid--centered {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 8px;
+      }
+    }
   </style>
   <!-- Schema: Person / Real Estate Agent -->
   <script type="application/ld+json">
@@ -194,7 +207,7 @@
     </section>
     <!-- Stats -->
     <div class="stats-bar">
-      <div class="stats-bar__grid">
+      <div class="stats-bar__grid stats-bar__grid--centered">
         <div class="stats-bar__item">
           <div class="stats-bar__num" data-count="17" data-suffix="">17</div>
           <div class="stats-bar__label">Homes Sold</div>
