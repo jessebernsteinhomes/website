@@ -49,6 +49,50 @@
       .seller-stats { padding: 20px 12px; }
       .seller-stats__num { font-size: 28px; }
     }
+
+    /* ===== MOBILE FIXES ===== */
+    @media (max-width: 768px) {
+      main, section, .container { overflow-x: hidden; }
+      .container { max-width: 100%; padding-left: 20px; padding-right: 20px; box-sizing: border-box; }
+
+      /* Hero tightening */
+      .hero--center .hero__title { font-size: 36px !important; line-height: 1.1 !important; }
+      .hero--center .hero__subtitle { font-size: 16px !important; padding: 0 8px; }
+      .hero__actions { flex-direction: column; gap: 12px; align-items: stretch; }
+      .hero__actions .btn { width: 100%; justify-content: center; }
+
+      /* Intro split */
+      .split { display: block !important; }
+      .split__media { padding: 24px 20px 0 !important; background: var(--sand); }
+      .split__media img { max-height: 280px !important; width: 100%; object-fit: cover; }
+      .split__body { padding: 28px 20px 48px !important; }
+
+      /* Marketing list — single column, tighter */
+      .marketing-list { grid-template-columns: 1fr !important; gap: 24px !important; }
+
+      /* Step-by-Step process grid — stack to 1 column */
+      .process-grid { grid-template-columns: 1fr !important; gap: 2px !important; }
+      .process-grid > div { padding: 28px 24px !important; }
+      .process-grid > div > div:first-child { font-size: 40px !important; margin-bottom: 14px !important; }
+
+      /* Pullquote */
+      .pullquote { padding: 40px 20px !important; }
+      .pullquote__text { font-size: 20px !important; line-height: 1.5 !important; }
+
+      /* CTA "Let's Talk" — stack text above form */
+      .cta-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+      .cta-grid .t-h2 { font-size: 32px !important; line-height: 1.15 !important; }
+      .contact-form { grid-template-columns: 1fr !important; gap: 18px !important; }
+      .contact-form .contact-form__full { grid-column: 1 / -1; }
+      .contact-form input,
+      .contact-form textarea { width: 100% !important; box-sizing: border-box; }
+    }
+
+    @media (max-width: 480px) {
+      .hero--center .hero__title { font-size: 30px !important; }
+      .seller-stats__grid { gap: 0; }
+      .seller-stats__item { padding: 8px 4px; }
+    }
   </style>
 </head>
 <body>
@@ -204,7 +248,7 @@
       <div class="divider divider--center"></div>
       <h2 class="t-h2">The Selling Process,<br>Step by Step</h2>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--sand-dark);" class="reveal">
+    <div class="process-grid reveal" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--sand-dark);">
       <div style="background: var(--white); padding: 40px 32px;">
         <div style="font-family: var(--font-serif); font-size: 48px; font-weight: 300; color: var(--sand-dark); line-height: 1; margin-bottom: 20px;">01</div>
         <h3 style="font-family: var(--font-serif); font-size: 20px; font-weight: 400; margin-bottom: 12px;">Strategy Session</h3>
@@ -238,7 +282,7 @@
 <!-- CTA -->
 <section class="section section--dark">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+    <div class="cta-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
       <div class="reveal">
         <p class="t-eyebrow text-gold">Ready to Sell?</p>
         <div class="divider"></div>
