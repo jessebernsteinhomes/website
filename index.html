@@ -96,6 +96,77 @@
         max-height: 360px;
       }
     }
+    /* Recent Sales grid + sold card overrides */
+    .listings-grid--sold {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    @media (min-width: 768px) {
+      .listings-grid--sold {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .listing-card__badge--sold {
+      background: #111 !important;
+      color: #fff !important;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      padding: 8px 14px;
+      border-radius: 2px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .listing-card__sold-price {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .listing-card__details--3 {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+    /* --- Mobile spacing/layout fixes --- */
+    @media (max-width: 768px) {
+      /* Prevent any section from causing horizontal scroll */
+      main, section, .container { overflow-x: hidden; }
+      .container { max-width: 100%; padding-left: 20px; padding-right: 20px; box-sizing: border-box; }
+      /* Tighten the About split on mobile so photo and body hug */
+      #about.split { display: block !important; }
+      #about .split__media { padding: 24px 20px 0 !important; background: var(--sand); }
+      #about .split__media img { max-height: 320px !important; }
+      #about .split__body { padding: 28px 20px 48px !important; }
+      /* Fix huge gap between "Why Clients Choose Jesse" and first card */
+      #edge { padding-top: 56px !important; padding-bottom: 56px !important; }
+      #edge .section-header { margin-bottom: 32px !important; }
+      #edge .edge-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+        margin-top: 0 !important;
+      }
+      #edge .edge-card { padding: 20px 0 !important; }
+      /* Force all multi-column grids to stack on mobile */
+      .listings-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+      .neighborhoods-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+      .testimonials-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+      .instagram-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .lifestyle-mosaic { grid-template-columns: repeat(2, 1fr) !important; gap: 8px !important; }
+      /* Stat bar tighter stacking on mobile */
+      .stats-bar__grid--centered { gap: 24px !important; padding: 32px 20px !important; }
+      /* Hero subtitle: let text reflow naturally on narrow screens */
+      .hero__subtitle br { display: none; }
+      .hero__eyebrow { font-size: 12px !important; letter-spacing: 0.18em !important; }
+    }
+    @media (max-width: 480px) {
+      .instagram-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .stats-bar__grid--centered { grid-template-columns: repeat(3, 1fr) !important; gap: 12px !important; }
+      .stats-bar__num { font-size: 32px !important; }
+      .stats-bar__label { font-size: 11px !important; }
+    }
   </style>
 </head>
 <body>
@@ -137,7 +208,7 @@
       <div class="hero__content" style="max-width: 1320px; margin: 0 auto; width: 100%;">
         <p class="hero__eyebrow">Venice Beach · Marina del Rey · The Westside</p>
         <h1 class="hero__title">Venice Beach<br>Real Estate, Elevated.</h1>
-        <p class="hero__subtitle">Architectural homes, coastal living, and insider expertise —<br>in LA's most dreamed-about zip code.</p>
+        <p class="hero__subtitle">Architectural homes, coastal living, and<br>insider expertise — in LA's most dreamed-about zip code.</p>
         <div class="hero__actions">
           <a href="listings.html" class="btn btn--primary">Explore Properties</a>
           <a href="contact.html" class="btn btn--outline">Book a Consultation</a>
@@ -313,6 +384,64 @@
         </div>
         <div style="text-align: center; margin-top: 48px;" class="reveal">
           <a href="listings.html" class="btn btn--outline-dark">View All Properties</a>
+        </div>
+      </div>
+    </section>
+    <!-- RECENT SALES -->
+    <section class="section section--white" id="recent-sales" aria-label="Recently sold properties">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="t-eyebrow">Track Record</p>
+          <div class="divider"></div>
+          <h2 class="t-h2">Recent Sales</h2>
+          <p class="t-lead" style="max-width: 520px; margin-top: 16px;">A selection of recently closed transactions on the Venice Beach Westside.</p>
+        </div>
+        <div class="listings-grid listings-grid--sold">
+          <article class="listing-card reveal reveal-delay-1">
+            <div class="listing-card__media">
+              <img src="sold-dell.jpg" alt="2800 Dell Ave, Venice" loading="lazy" />
+              <span class="listing-card__badge listing-card__badge--sold">Sold</span>
+            </div>
+            <div class="listing-card__body">
+              <div class="listing-card__sold-price">Sold · $4,889,900</div>
+              <div class="listing-card__address">2800 Dell Ave, Venice, CA 90291</div>
+              <div class="listing-card__details listing-card__details--3">
+                <div class="listing-card__detail">4 <span>Beds</span></div>
+                <div class="listing-card__detail">5 <span>Baths</span></div>
+                <div class="listing-card__detail">3,634 <span>Sq Ft</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="listing-card reveal reveal-delay-2">
+            <div class="listing-card__media">
+              <img src="sold-greenfield.jpg" alt="2243 Greenfield Ave, Los Angeles" loading="lazy" />
+              <span class="listing-card__badge listing-card__badge--sold">Sold</span>
+            </div>
+            <div class="listing-card__body">
+              <div class="listing-card__sold-price">Sold · $3,985,000</div>
+              <div class="listing-card__address">2243 Greenfield Ave, Los Angeles, CA 90064</div>
+              <div class="listing-card__details listing-card__details--3">
+                <div class="listing-card__detail">5 <span>Beds</span></div>
+                <div class="listing-card__detail">5 <span>Baths</span></div>
+                <div class="listing-card__detail">3,836 <span>Sq Ft</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="listing-card reveal reveal-delay-3">
+            <div class="listing-card__media">
+              <img src="sold-dudley.jpg" alt="43 Dudley Ave, Venice" loading="lazy" />
+              <span class="listing-card__badge listing-card__badge--sold">Sold</span>
+            </div>
+            <div class="listing-card__body">
+              <div class="listing-card__sold-price">Sold · $2,416,000</div>
+              <div class="listing-card__address">43 Dudley Ave, Venice, CA 90291</div>
+              <div class="listing-card__details listing-card__details--3">
+                <div class="listing-card__detail">4 <span>Beds</span></div>
+                <div class="listing-card__detail">3 <span>Baths</span></div>
+                <div class="listing-card__detail">1,884 <span>Sq Ft</span></div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
