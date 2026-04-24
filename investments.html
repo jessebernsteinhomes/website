@@ -6,9 +6,24 @@
   <title>Venice Beach Investment Properties | Real Estate Investing | Jesse Bernstein</title>
   <meta name="description" content="Invest in Venice Beach and Westside Los Angeles real estate with Jesse Bernstein. Income properties, architectural value-add, 1031 exchanges, and long-term coastal appreciation." />
   <meta name="keywords" content="Venice Beach investment properties, Los Angeles real estate investing, income property Venice Beach, 1031 exchange Westside LA, coastal investment properties" />
+  <meta property="og:title" content="Venice Beach Investment Properties | Jesse Bernstein" />
+  <meta property="og:description" content="Income properties, architectural value-add, 1031 exchanges, and long-term coastal appreciation." />
+  <meta property="og:image" content="https://www.jessebernsteinhomes.com/jesse-og-card.png" />
+  <meta property="og:image:secure_url" content="https://www.jessebernsteinhomes.com/jesse-og-card.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Jesse Bernstein Homes — Venice Beach Real Estate" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://www.jessebernsteinhomes.com/investments.html" />
   <link rel="stylesheet" href="styles.css" />
   <style>
+    /* Logo image in nav */
+    .nav__logo--img { display: flex !important; flex-direction: column; align-items: flex-start; gap: 2px; }
+    .nav__logo-img { height: 60px; width: auto; display: block; }
+    @media (max-width: 960px) { .nav__logo-img { height: 52px; } }
+    @media (max-width: 768px) { .nav__logo-img { height: 44px; } }
+    @media (max-width: 480px) { .nav__logo-img { height: 38px; } }
     /* ===== MOBILE FIXES ===== */
     @media (max-width: 768px) {
       main, section, .container { overflow-x: hidden; }
@@ -52,9 +67,8 @@
 <body>
   <nav class="nav" role="navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <span class="nav__logo-name">Jesse Bernstein</span>
-        <span class="nav__logo-tag">Venice Beach · Westside Los Angeles</span>
+      <a href="index.html" class="nav__logo nav__logo--img">
+        <img src="jesse-logo.svg" alt="Jesse Bernstein Homes" class="nav__logo-img" />
       </a>
       <ul class="nav__links" role="list">
         <li><a href="about.html" class="nav__link">About</a></li>
