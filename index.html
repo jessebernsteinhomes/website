@@ -210,17 +210,15 @@
       margin-bottom: 36px;
     }
     .about-video__wrap {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
       border-radius: 4px;
+      overflow: hidden;
+      line-height: 0;
     }
-    .about-video__wrap iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
+    .about-video__wrap video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
     }
     /* --- Mobile spacing/layout fixes --- */
     @media (max-width: 768px) {
@@ -365,7 +363,7 @@
           <h2 class="t-h2 text-white" style="margin-bottom: 0;">Meet Jesse</h2>
         </div>
         <div class="about-video__wrap reveal">
-          <video controls preload="metadata" poster="">
+          <video controls preload="metadata" poster="https://img.youtube.com/vi/CIGLKBcGMVI/maxresdefault.jpg">
             <source src="jesse-bernstein-intro.mp4" type="video/mp4" />
           </video>
         </div>
